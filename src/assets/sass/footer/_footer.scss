@@ -1,0 +1,61 @@
+footer{
+	div.container{
+		div.footer-top{
+			margin:16px 23px 0 23px;
+			div.list-left ,div.list-right{
+				float:left;
+				ul{
+					li{
+						a{
+							border-right: 1px solid #ffffff;
+							display:block;
+							width:361px;
+							height:57px;
+							margin-bottom:1px;
+							@include setFont(14px,#595757,500,$font-gothic);
+							background: #f0f0f0;
+							box-sizing:border-box;
+							line-height:57px;
+							i{
+								padding: 0 13px 0 18px;
+							}
+						}
+					}
+				}
+			}
+			div.list-right{
+				margin-left:0px;
+				li{
+					border-right:none;
+				}
+			}
+			@include clearfix;
+		}
+		div.footer-bottom{
+			background: #f0f0f0;
+			margin:0 23px;
+			padding-top:20px;
+			text-align:center;
+			a{
+				display:inline-block;
+				height:32px;
+				width:88px;
+				box-sizing:border-box;
+				border:1px solid #9b9b9b;
+				line-height: 32px;
+				@include setFont(14px, #595757,bold, $font-gothic);
+				i{
+					margin-right:5px;
+				}
+				&.active{
+					background: #595757;
+					color:#ffffff;
+				}
+			}
+			p{
+				padding:34px 0 105px 0;
+				@include setFont(12px,#595757,500,$font-gothic);
+			}
+		}
+	}
+}

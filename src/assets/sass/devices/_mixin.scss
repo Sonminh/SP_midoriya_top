@@ -1,0 +1,402 @@
+
+@mixin setWidth($width: 100%){
+	div.container{
+		width:$width!important;
+	}
+}
+
+@mixin setSearch($width-input : 76% , $width-a : 20%, $font-size:12px){
+	div.search{
+		div.container{
+			div.btn-search{
+				input{
+					width:$width-input;
+					font-size:$font-size;
+				}
+				a{
+					width:$width-a;
+					font-size:$font-size;
+				}
+				@include clearfix;
+			}
+		}
+	}
+}
+@mixin setArticle(){
+	div.article{
+		div.container{
+			div.btn-list{
+				a{
+					width:30%;
+					margin-left:3%;
+				}
+				@include clearfix;
+			}
+				ul{
+					width:100%;
+					li{
+						margin:5% 3% 5% 0 !important;
+						width:30%;
+						a{
+							img{
+								width:100% !important;
+								height:100% !important;
+							}
+						}
+					}
+				}
+		}
+	}
+}
+
+@mixin setWidget(){
+	div.widget{
+		div.container{
+			div.btn-widget{
+				a{
+					width:30%;
+				}
+			}
+			div.list-widget{
+				ul{
+					li{
+						margin:5% 0 0 4%;
+						width:30%;
+						img{
+							width:100%;
+						}
+					}
+					li.img_larget{
+						margin:5% 0 0 4%;
+						width:48%;
+					}
+					@include clearfix;
+				}
+			}
+		}
+	}
+}
+
+@mixin setRecommend(){
+	div.recommend{
+		div.container{
+			div.list-widget-recommend{
+				ul{
+					li{
+						width:45%;
+						margin:0px 5% 27px 0px;
+						a{
+							display:block;
+							img{
+								width:100%;
+							}
+						}
+					}
+					@include clearfix;
+				}
+			}
+		}
+	}
+}
+@mixin setCategory($font-size :12px){
+	div.category{
+		div.container{
+			div.list-category{
+				width:89%;
+				div.category-left, div.category-right{
+					float:left;
+					width:50%;
+					ul{
+						li{
+							width:100%;
+							a{
+								width:100%;
+								font-size: $font-size;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@mixin setFooter($font-size:12px){
+	footer{
+		div.container{
+			div.footer-top{
+				width:89%;
+				div.list-left ,div.list-right{
+					width:50%;
+					ul{
+						li{
+							width:100%;
+							a{
+								width:100%;
+								font-size:$font-size;
+								i{
+									font-size:$font-size;
+								}
+							}
+						}
+					}
+				}
+			}
+			div.footer-bottom{
+				width:89%;
+			}
+		}
+	}
+}
+
+@mixin setMenu(){
+	div.menu{
+	div.container{
+		div.menu-left{
+			width:20%;
+			a.icons-remove{
+				margin:10% 0 0 50%;
+			}
+		}
+		div.menu-right{
+			width:80%;
+			div.content-menu{
+				width:90%;
+				div.search-menu{
+					div.search{
+						input{
+							width:95%;
+						}
+						a{
+							top:48%;
+							right:6%;
+						}
+					}
+				}
+				div.button-menu{
+					a{
+						width: 46%;
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+
+@mixin setMenuMobile($font-size:12px){
+	div.menu{
+	div.container{
+		div.menu-left{
+			width:20%;
+			a.icons-remove{
+				margin:10% 0 0 50%;
+			}
+		}
+		div.menu-right{
+			width:80%;
+			div.content-menu{
+				width:90%;
+				div.search-menu{
+					div.title-search{
+						h3{
+							font-size:$font-size;
+						}
+					}
+					div.search{
+						input{
+							width:90%;
+							height:26px;
+							margin-top:10px !important;
+						}
+						a{
+							top:40%;
+							right:6%;
+						}
+					}
+				}
+				div.button-menu{
+					a{
+						width: 46%;
+						font-size:12px !important;
+					}
+				}
+				div.category-menu{
+					div.title-category{
+						margin-top:35px;
+						h3{
+							@include setFont(12px,#595757,bold,$font-gothic);
+						}
+					}
+					div.box-menu-category{
+						div.title-menu{
+							a{
+								font-size:11px;
+								height:20px;
+								padding:5px 20px;
+								i{
+									top:10px;
+								}
+							}
+						}
+						ul.list-menu{
+							li{
+								a{
+									font-size:12px;
+									i{
+										font-size:10px;
+									}
+								}
+							}
+							}
+
+					}
+				}
+				div.button-menu{
+					margin-top:20px;
+					a{
+						width:42%;
+					}
+				}
+				div.version-menu{
+					margin-top:20px;
+				}
+			}
+		}
+	}
+}
+}
+
+@mixin setSearch768(){
+	div.search{
+	div.container{
+		div.btn-search{
+			input{
+				width:590px;
+			}
+			a{
+				width:129px;
+			}
+		}
+	}
+	}
+}
+@mixin setArticle768(){
+	div.article{
+		div.container{
+		div.btn-list{
+			a{
+				width:220px;
+			}
+			@include clearfix;
+		}
+		div.list-img{
+			ul{
+				li{
+					width:218px;
+					a{
+						img{
+							width:100%;
+							height:100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+}
+
+@mixin setWidget768(){
+	div.widget{
+		div.container{
+			div.btn-widget{
+				a{
+					width:232px;
+				}
+			}
+			div.list-widget{
+				ul{
+					li{
+						width:218px;
+					}
+					li.img_larget{
+						margin:24px 0 0 24px;
+						width:348px;
+					}
+				}
+			}
+		}
+	}
+
+}
+@mixin setWidgetRecommend768(){
+	div.recommend{
+		div.container{
+			div.list-widget-recommend{
+				ul{
+					li{
+						width:334px;
+					}
+				}
+			}
+		}
+	}
+}
+@mixin setCategory768(){
+	div.category{
+		div.container{
+			div.list-category{
+				div.category-left, div.category-right{
+					ul{
+
+						li{
+							width:100%;
+							a{
+								width:352px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@mixin setFooter768(){
+	footer{
+		div.container{
+			div.footer-top{
+				div.list-left ,div.list-right{
+					ul{
+						li{
+							a{
+								width:361px;
+							}
+						}
+					}
+				}
+			}
+			div.footer-bottom{
+				width:702px;
+			}
+		}
+	}
+}
+
+@mixin setLogo(){
+	header{
+		div.container{
+			position:relative;
+			div.logo{
+				width:90%;
+				text-align:center;
+				padding:17px 0;
+				img{
+					width:71%;
+				}
+			}
+		}
+	}
+}

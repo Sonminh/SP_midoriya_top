@@ -1,0 +1,13 @@
+@media screen
+	and (max-width: $device_size_768)
+{
+	@include setWidth();
+	@include setSearch($width-input : 72% , $width-a : 20%);
+	@include setArticle();
+	@include setWidget();
+	@include setRecommend();
+	@include setCategory(10px);
+	@include setFooter(10px);
+	@include setMenuMobile();
+	@include setLogo()
+}
